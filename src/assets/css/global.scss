@@ -1,0 +1,334 @@
+.disabledBlock{
+    filter: grayscale(100%);
+    pointer-events: none;
+    opacity: .5;
+}
+
+.rangeFieldDash{
+    margin-top: 7px;
+}
+
+// Filter bar
+.dashBoardBtnFilter{
+    button{
+        height: 53px;
+        margin-top: 8px;
+        margin-right: 10px;
+    }
+}
+
+// Chart
+.chartRadialLessin{
+    .apexcharts-radialbar{
+        g{
+            g{
+                &:nth-child(2){
+                    g{
+                        path{
+                            stroke: #45b5df;
+                            stroke-linecap: round;
+                        }
+                        &:nth-child(2){
+                            path{
+                                stroke: #fdd07d;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*******************************  DASHBOARD  ***********************************/
+
+// Blocks header
+.allUser{
+    background: #1F3556;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+    figure{
+        width: 130px;
+        height: 130px;
+        //background: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: auto;
+            height: 70px;
+        }
+    }
+    h5{
+        margin: 0px;
+        color: white;
+        font-weight: 300;
+        font-size: 16px;
+    }
+    h3{
+        color: white;
+        margin: 0px;
+        font-size: 40px;
+        font-weight: 900;
+    }
+    .apexcharts-legend{
+        display: none;
+    }
+    .apexcharts-datalabel-label{
+        display: none;
+    }
+    .apexcharts-datalabel-value{
+        transform: translateY(-15px);
+        font-size: 15px;
+    }
+}
+
+.allUserVisit{
+    background: #DBF0FF;
+    h5{
+        color: #173768;
+    }
+    h3{
+        color: #173768;
+    }
+}
+
+.allUserEstudent{
+    background: #FFF0F5;
+    h5{
+        color: #4B3A40;
+    }
+    h3{
+        color: #4B3A40;
+    }
+}
+
+.allUserProgress{
+    background: #e4f9e7;
+    h4{
+        //color: white;
+        font-weight: 900;
+    }
+}
+
+
+// Percent Block
+.percentBlock{
+    display: flex;
+    align-items: center;
+    .icon{
+        width: 80px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        svg{
+            font-size: 50px;
+            color: #f50f57;
+        }
+        .init{
+            color :#23bdd7;
+        }
+        .complete{
+            color :#5abd12 !important;
+        }
+        .icomplete{
+            color :#f50f57 !important;
+        }
+        .cert{
+            color :#ffc107 !important;
+        }
+
+    }
+    
+    .txt{
+        width: calc( 100% - 100px );
+        h2{
+            margin: 0px;
+            font-weight: bold;
+        }
+        h3{
+            margin: 0px;
+            font-size: 16px;
+        }
+        h5{
+            margin: 0px;
+            font-size: 14px;
+        }
+    }
+}
+
+// Bloque de horas
+.hoursBlock{
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .icon{
+        width: 90px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        svg{
+            font-size: 70px;
+            //opacity: .7;
+        }
+    }
+    .txt{
+        text-align: left;
+        h3{
+            margin: 0px;
+            font-size: 16px;
+        }
+        h2{
+            margin: 0px;
+            font-size: 30px;
+            strong{
+                font-weight: bold;
+            }
+        }
+
+    }
+}
+
+// Progreso promedio
+.progressBlock{
+    .apexcharts-legend{
+        display: none;
+    }
+}
+
+// Right
+.estadRight{
+    display: flex;
+    background: #1F3556;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 18px 25px;
+    margin-bottom: 20px;
+    position: relative;
+    figure{
+        width: 50px;
+        margin: 0px;
+    }
+    .txt{
+        padding-left: 15px;
+        p{
+            color: white;
+            font-size: 16px;
+            margin: 0px 0px 0px 0px;
+        }
+        h4{
+            color: white;
+            font-size: 25px;
+            margin: 0px;
+        }
+    }
+    .percent{
+        position: absolute;
+        right: -90px;
+        top: -5px;
+    }
+    .apexcharts-legend{
+        display: none;
+    }
+    .apexcharts-datalabel-label{
+        display: none;
+    }
+    .apexcharts-datalabel-value{
+        fill: white;
+        font-size: 13px;
+        transform: translateY(-17px);
+    }
+}
+
+.estadRightIni{
+    background: #15BCE1;
+}
+
+.estadRightComplete{
+    background: #01B76A;
+}
+.estadRightIncomplete{
+    background: #FF9900
+}
+.estadRightCert{
+    background: #F50F57;
+}
+
+// Menu
+.adminLessinMenu{
+    a{
+        img{
+            width: auto;
+            height: 30px;
+            filter: grayscale(10);
+            opacity: 1;
+        }
+    }
+    a.active{
+        //color: #f50f57;
+        img{
+            opacity: 1;
+            filter: grayscale(0);
+        }
+    }
+}
+
+.btnSelectData{
+    cursor: pointer;
+    height: 55px;
+    margin-top: 7px;
+    color: rgba(0,0,0,.7);
+    width: 100%;
+    padding: 0px 20px;
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,.15);
+    line-height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-self: center;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-bottom: 2px solid rgba(0,0,0,.5);
+        border-right: 2px solid rgba(0,0,0,.5);
+        right: 15px;
+        bottom: 0px;
+        top: 0px;
+        margin-top: auto;
+        margin-bottom: auto;
+        transform: rotate(45deg);
+    }
+
+}
+
+.btnSelectDataResult{
+    position: relative;
+    width: 100%;
+    background: white;
+    z-index: 9999;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,.1);
+    border-radius: 5px 5px 10px 10px;
+    overflow: hidden;
+    display: flex;
+    padding: 5px 0px 0px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashFilterBox{
+    overflow: visible;
+    z-index: 333;
+}
