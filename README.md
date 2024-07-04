@@ -1,40 +1,58 @@
-## Minimal [(Free version)](https://minimal-kit-react.vercel.app/)
+![Logo](https://admin.lessin.pe/public/readme/logo_lessin.png)
 
-![license](https://img.shields.io/badge/license-MIT-blue.svg)
+# Backend
 
-> Free React Admin Dashboard made with Material-UI components and React.
+Detalles tecnicos del desarrollo
 
-![preview](public/assets/preview.jpg)
+![Logo](https://admin.lessin.pe/public/readme/dashboard_preview.png)
 
-| [Minimal Free](https://minimal-kit-react.vercel.app/) | [Minimal](https://material-ui.com/store/items/minimal-dashboard/) |
-| ----------------------------------------------------- | :---------------------------------------------------------------- |
-| **6** Demo pages                                      | **50+** demo pages                                                |
-| -                                                     | ✓ Multi-language                                                  |
-| -                                                     | ✓ Dark/Light Mode 🌓                                              |
-| -                                                     | ✓ [More components](https://minimals.cc/components)               |
-| -                                                     | ✓ Next.js version                                                 |
-| -                                                     | ✓ TypeScript version                                              |
-| -                                                     | ✓ Design files (Figma & Sketch)                                   |
+## Tecnologias del Dashboard Administrador
 
-## Page demo
+- React Js.
+- Chart js (Graficos)
+- Theme Material (https://minimal-kit-react.vercel.app/)
+- Axios (Request)
+- React Csv (Exportar Csv de clientes)
+- Mui Material (componentes)
 
-- [Dashboard](https://minimal-kit-react.vercel.app/dashboard/app)
-- [Users](https://minimal-kit-react.vercel.app/dashboard/user)
-- [Product](https://minimal-kit-react.vercel.app/dashboard/products)
-- [Blog](https://minimal-kit-react.vercel.app/dashboard/blog)
-- [Login](https://minimal-kit-react.vercel.app/login)
-- [Not Found](https://minimal-kit-react.vercel.app/404)
+## Running Dev
 
-## Getting started
+To run tests, run the following command
 
-- Recommended `node js 16.x` and `npm 6+`. (suggestion v16.15.0)
-- Install dependencies: `npm install` / `yarn install`
-- Start the project: `npm run start` / `yarn start`
+```bash
+  npm run start
+```
 
-## License
+## Running Prod
 
-Distributed under the MIT License. See [LICENSE](https://github.com/minimal-ui-kit/minimal.free/blob/main/LICENSE.md) for more information.
+To run prod, run the following command
 
-## Contact us
+```bash
+  npm run build
+```
 
-Email Us: support@minimals.cc
+## Api
+- Api
+- Php V8
+- Mysql
+- Node Express
+- Php ini (Configuracion personalizada para carga masiva de usuarios)
+
+## Servidor Digital Ocean
+- Dropet Ubuntu 20 Lts
+- Apache2
+- Node
+- Pm2
+- Mysql
+- Configuraciones personalizadas para cada paquete
+- Cloudflare
+
+## Esquema de dominios en Cloudflare
+
+Los siguientes dominios apuntan lessin.pe, admin.lessin.pe al droplet de digital ocean.
+Por otro lado los otros sub dominios mail.lessin.pe, marketing.lessin.pe y a fines apuntan  a un proveedor externos que es banahosting.
+De querer agregar un subdominio tendrian que hacerlo directamente en cloudflare
+
+![Logo](https://admin.lessin.pe/public/readme/cloudflare_img.png)
+
+exit

@@ -43,7 +43,9 @@ import UserContext from "../../context/AuthContext";
 // ----------------------------------------------------------------------
 
 const TABLE_HEAD = [
+  
   { id: 'name', label: 'Nombre', alignRight: false },
+  { id: 'ID', label: 'Id', alignRight: false },
   { id: 'status', label: 'Estado', alignRight: false },
   { id: '' },
 ];
@@ -240,6 +242,7 @@ export default function Clientes() {
                           <Checkbox checked={selectedUser} onChange={(event) => handleClick(event, name)} />
                         </TableCell>
                         }
+
                         <TableCell component="th" scope="row" padding="left">
                           <Stack direction="row" alignItems="center" spacing={2}>
                             <Avatar alt={title.rendered} src={acf.pdocente_imagen ? acf.pdocente_imagen : ''} />
@@ -249,8 +252,12 @@ export default function Clientes() {
                           </Stack>
                         </TableCell>
                         <TableCell align="left">
+                          <Label>{id}</Label>
+                        </TableCell>
+                        <TableCell align="left">
                           <Label color={(status === 'Inactivo' && 'error') || 'success'}>{status}</Label>
                         </TableCell>
+
 
                         <TableCell align="right" onClick={()=>{handleOpenMenu2(id)}}>
                           <IconButton size="large" color="inherit" onClick={handleOpenMenu}>
